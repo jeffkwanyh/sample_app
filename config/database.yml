@@ -5,10 +5,11 @@
 #   gem 'sqlite3'
 development:
   adapter: mysql
-  database: PD_dbdev
+  database: PDdbdev
   username: root
   password: hmts4eb2@sw0
   host: localhost
+  socket: /Applications/XAMPP/xamppfiles/var/mysql/mysql.sock
   #database: db/development.sqlite3
   #pool: 5
   #timeout: 5000
@@ -18,10 +19,11 @@ development:
 # Do not set this db to the same as development or production.
 test:
   adapter: mysql
-  database: PD_dbdev
+  database: PDdbtest
   username: root
   password: hmts4eb2@sw0
   host: localhost
+  socket: /Applications/XAMPP/xamppfiles/var/mysql/mysql.sock
   #adapter: sqlite3
   #database: db/test.sqlite3
   #pool: 5
@@ -29,10 +31,11 @@ test:
 
 production:
   adapter: mysql
-  database: PD_dbdev
+  database: PDdbprod
   username: root
   password: hmts4eb2@sw0
   host: localhost
+  socket: /Applications/XAMPP/xamppfiles/var/mysql/mysql.sock
   #adapter: sqlite3
   #database: db/production.sqlite3
   #pool: 5
